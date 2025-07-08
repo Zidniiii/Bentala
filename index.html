@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Bentala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Rasa', sans-serif;
+    }
+
+    .Homepage {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .Homepage img.A29261357dd4e9b62a94cea795071 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .form-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      background: rgba(175, 187, 152, 0.60);
+      border-radius: 12px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .BentalaLogo1 {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 200px;
+      height: 90px;
+    }
+
+    .input-box {
+      display: block;
+      width: 80%;
+      margin: 0 auto 20px auto;
+      height: 35px;
+      background: #F5F5F5;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: 'Rasa', sans-serif;
+      padding-left: 10px;
+    }
+
+    .password-box {
+      background: rgba(245, 245, 245, 0.90);
+    }
+
+    .forgot {
+      font-size: 14px;
+      color: rgba(34, 57, 60, 0.85);
+      margin-bottom: 30px;
+      text-align: left;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sign-in-button {
+      width: 150px;
+      height: 43px;
+      background: #6B8B81;
+      border-radius: 10px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sign-in-button button {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: none;
+      color: #F5F5F5;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'Rasa', sans-serif;
+      cursor: pointer;
+    }
+
+    .sign-in-button button:hover {
+      background: #58756c;
+      border-radius: 10px;
+    }
+
+    .signup-text {
+      text-align: center;
+      color: rgba(34, 57, 60, 0.90);
+      font-size: 14px;
+      margin-top: 18px;
+    }
+
+    .signup-text a {
+      color: #6B8B81;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .signup-text a:hover {
+      text-decoration: underline;
+    }
+
+
+    @media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .BentalaLogo1 {
+    width: 150px;
+    height: auto;
+  }
+
+  .input-box {
+    width: 100%;
+    font-size: 14px;
+    height: 32px;
+  }
+
+  .forgot, .signup-text {
+    font-size: 13px;
+  }
+
+  .sign-in-button {
+    width: 100%;
+    height: 40px;
+  }
+
+  .sign-in-button button {
+    font-size: 18px;
+  }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="Homepage">
+  <img
+    class="A29261357dd4e9b62a94cea795071"
+    src="Pict/background.png"
+    alt="Background Image"
+  />
+
+  <div class="form-container">
+    <img
+      class="BentalaLogo1"
+      src="Pict/bentala logo 1.svg"
+      alt="Bentala Logo"
+    />
+
+    <form action="login.php" method="POST">
+      <input
+        type="email"
+        name="email"
+        class="input-box"
+        placeholder="E-mail Address"
+        autocomplete="off"
+        required
+      />
+
+      <input
+        type="password"
+        name="password"
+        class="input-box password-box"
+        placeholder="Password"
+        autocomplete="off"
+        required
+      />
+
+      <div class="forgot">Forgot Password?</div>
+
+      <div class="sign-in-button">
+        <button type="submit">SIGN IN</button>
+      </div>
+    </form>
+
+    <div class="signup-text">
+      Don’t have account? <a href="signup.html">Sign Up</a>
+    </div>
+
+      >
+        <path
+          d="M15.0039 3C8.37491 3 3 8.373 3 15C3 21.627 8.37491 27 15.0039 27C25.0139 27 27.2691 17.707 26.3301 13H25H22.7324H15V17H22.7383C21.8487 20.4483 18.726 23 15 23C10.582 23 7 19.418 7 15C7 10.582 10.582 7 15 7C17.009 7 18.8391 7.74575 20.2441 8.96875L23.0859 6.12891C20.9519 4.18491 18.1169 3 15.0039 3Z"
+          fill="black"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

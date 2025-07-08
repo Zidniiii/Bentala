@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Bentala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Rasa', sans-serif;
+    }
+
+    .Homepage {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .Homepage img.A29261357dd4e9b62a94cea795071 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .form-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: auto;
+      background: rgba(175, 187, 152, 0.60);
+      border-radius: 12px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .BentalaLogo1 {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 200px;
+      height: 90px;
+    }
+
+.input-box {
+  width: 100%;
+  margin: 0 auto 20px auto;
+
+      height: 35px;
+      background: #F5F5F5;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-family: 'Rasa', sans-serif;
+      padding-left: 10px;
+    }
+
+    .password-box {
+      background: rgba(245, 245, 245, 0.90);
+    }
+
+    .sign-up-button {
+      width: 150px;
+      height: 43px;
+      background: #6B8B81;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .sign-up-button button {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: none;
+      color: #F5F5F5;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'Rasa', sans-serif;
+      cursor: pointer;
+    }
+
+    .signin-text {
+      text-align: center;
+      color: rgba(34, 57, 60, 0.90);
+      font-size: 14px;
+      margin-top: 18px;
+    }
+
+    .signin-text a {
+      color: #6B8B81;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .signin-text a:hover {
+      color: #4e6b60;
+    }
+    @media (max-width: 600px) {
+      .form-container {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .BentalaLogo1 {
+        width: 150px;
+        height: auto;
+      }
+
+      .input-box {
+        width: 100%;
+        left: 0;
+        font-size: 14px;
+        height: 32px;
+      }
+
+      .sign-up-button {
+        width: 100%;
+        height: 40px;
+      }
+
+      .sign-up-button button {
+        font-size: 18px;
+      }
+
+      .signin-text {
+        font-size: 13px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="Homepage">
+  <img
+    class="A29261357dd4e9b62a94cea795071"
+    src="Pict/background.png"
+    alt="Background Image"
+  />
+
+  <div class="form-container">
+    <img
+      class="BentalaLogo1"
+      src="Pict/bentala logo 1.svg"
+      alt="Bentala Logo"
+    />
+
+    <form action="signup.php" method="POST">
+      <input
+        type="text"
+        name="fullname"
+        class="input-box"
+        placeholder="Full Name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        class="input-box"
+        placeholder="E-mail Address"
+        required
+      />
+
+      <input
+        type="password"
+        name="password"
+        class="input-box password-box"
+        placeholder="Password"
+        required
+      />
+
+      <input
+        type="password"
+        name="password_confirm"
+        class="input-box password-box"
+        placeholder="Confirm Password"
+        required
+      />
+
+      <div class="sign-up-button">
+        <button type="submit">SIGN UP</button>
+      </div>
+    </form>
+
+    <div class="signin-text">
+      Already have an account? <a href="index.html">Sign In</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
